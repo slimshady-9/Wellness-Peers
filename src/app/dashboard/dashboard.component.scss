@@ -1,0 +1,119 @@
+.sidenav{
+    background : url("https://refrigerationcompressorparts.net/wp-content/uploads/2019/03/solution-sidebar-background1.jpg");
+    position: fixed;
+
+    .icon-style{
+        position: relative;
+        top: 6px;
+    }
+
+    .dashboard-item{
+        list-style: none;
+        height: 62px;
+        padding: 11px 12px;
+        color: #82b0d9;
+    }
+    .dashboard-item:hover{
+        background-color: #3559bd;
+        border-radius: 19px;
+        color: #e4dddd;
+        cursor: pointer;
+    }
+}
+
+.icon-cont{
+    width: 33px;
+    height: 33px;
+    background-color: #b8deff;
+    color: #6969d6;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    left: 198px;
+    bottom: 29px;
+    cursor: pointer;
+}
+
+.view-more:hover{
+    background-color: white;
+}
+
+.card-head{
+  height: 40px;
+  background-color: white;
+  border-top-right-radius: 27%;
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px;
+  margin-top: -6rem;
+  background-color: white;
+  border-radius: 24px;
+  padding: 0px 10px;
+}
+
+
+.box {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.bg-cont{
+
+  height: 230px;
+  z-index: 200;
+
+  .inside-cont{
+
+  height: 100%;
+
+  margin: 0px 61px;
+
+  padding: 48px 12px;
+
+  }
+
+  .col{
+
+   display: flex;
+
+  justify-content: space-between;
+
+  }
+
+   .btn{
+
+  color: #f7faff;
+
+  background-color: rgba(247,250,255,.1);
+
+  height: 41px;
+}
+
+.btn:hover{
+
+  background-color: white;
+
+   color:black;
+
+   }
+
+  }
+
+@keyframes fadeIn {
+    from {
+     opacity: 0;
+     }
+     to {
+opacity: 1;
+     }
+    }
+

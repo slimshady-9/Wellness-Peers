@@ -1,0 +1,122 @@
+// .sidenav{
+//     background : url("https://refrigerationcompressorparts.net/wp-content/uploads/2019/03/solution-sidebar-background1.jpg");
+//     position: fixed;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     z-index: 2;
+
+//     .icon-style{
+//         position: relative;
+//         top: 6px;
+//     }
+
+//     .dashboard-item{
+//         list-style: none;
+//         height: 62px;
+//         padding: 3px 12px;
+//         color: #82b0d9;
+//     }
+//     .dashboard-item:hover{
+//         background-color: #3559bd;
+//         border-radius: 19px;
+//         color: #e4dddd;
+//         cursor: pointer;
+//     }
+//     .item-style{
+//         padding: 13px 16px;
+//     }
+// }
+
+#top-nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    margin-right: 43px;
+    span{
+        margin-right: 33px;
+        margin-top: 20px;
+        color: #677788;
+        white-space:pre-line
+    }
+    #dropdownMenuButtonHover:hover{
+        color: #3778FF;
+    }
+    .dropdown-menu{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+        border-top: 3px solid #3778FF;
+        border-top-left-radius: 0 ;
+        border-top-right-radius: 0 ;
+        inset: 36px 38px auto auto;
+
+        a{
+            height:90px;
+        }
+    }
+    .dropdown:hover .dropdown-menu{
+        display: inline-block;
+    }
+    .dropdown-item:hover h5{
+        color: #3778FF;
+    }
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+#down-nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    padding-top: 12px;
+    margin-top: 5px;
+    margin-right: 73px;
+
+    span{
+        margin-right: 37px;
+        margin-top: 10px;
+        color: #677788;
+        font-size: 17px;
+    }
+    .drop-text{
+        padding-left: 15px;
+    }
+    .dropdown:hover{
+        color: #3778FF;
+        border-bottom: 3px solid #3778FF;
+    }
+    .drop-text:hover{
+        color: #3778FF;
+    }
+    .btn{
+        width: 98px;
+        height: 41px;
+    }
+    .btn-transition:hover{
+        height: 43px;
+        box-shadow: 0 3px 6px rgba(49, 109, 212, 0.13);
+    }
+    .logo{
+        height: 61px;
+        position: absolute;
+        left: 33px;
+        top: 40px;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: inline-block;
+    }
+    .dropdown-menu{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+        border-top: 3px solid #3778FF;
+        border-top-left-radius: 0 ;
+        border-top-right-radius: 0 ;
+        inset: 55px -3px auto auto;
+    }
+    a{
+        height: 40px;
+    }
+}

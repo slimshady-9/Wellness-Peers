@@ -1,0 +1,47 @@
+.box {
+
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+    
+@keyframes fadeIn {
+    from {
+     opacity: 0;
+     }
+     to {
+opacity: 1;
+     }
+    }
+.container-bx{
+    // position: absolute;
+    //overflow-x: hidden;
+    background-color: #f6f6f6;
+    display: flex; 
+    justify-content: space-between;
+    height: 100vh;
+    left: 22%;
+}
+
+.bg-cont{
+    height: 230px;
+    z-index: 200;
+    .inside-cont{
+        height: 100%;
+        margin: 0px 61px;
+        padding: 48px 12px;
+    }
+    .col{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        color: #f7faff;
+        background-color: rgba(247,250,255,.1);
+        height: 41px;
+    }
+    .btn:hover{
+        background-color: white;
+        color:black;
+    }
+}
+  

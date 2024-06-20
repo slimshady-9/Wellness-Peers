@@ -1,0 +1,74 @@
+
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form>
+      <h4 style="color: black; font-family: cursive; font-size: x-large">
+        LOGIN
+      </h4>
+      <input
+        #Email="ngModel"
+        type="text"
+        [(ngModel)]="email"
+        placeholder="Email"
+        [ngModelOptions]="{ standalone: true }"
+        required
+        pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      />
+      <div
+        *ngIf="Email.invalid && (Email.dirty || Email.touched)"
+        class="alert"
+      >
+        <span *ngIf="Email.errors!['required']" style="color: red">
+          Email is required
+        </span>
+        <span *ngIf="Email.errors!['pattern']" style="color: red">
+          Please Enter Valid Email
+        </span>
+      </div>
+      <input
+        #Password="ngModel"
+        type="password"
+        [(ngModel)]="password"
+        placeholder="Password"
+        [ngModelOptions]="{ standalone: true }"
+        required
+        minlength="8"
+      />
+      <div
+        *ngIf="Password.invalid && (Password.dirty || Password.touched)"
+        class="alert"
+      >
+        <span *ngIf="Password.errors!['required']" style="color: red">
+          Password is required
+        </span>
+      </div>
+      <a href="#">Forgot your password?</a>
+      <button (click)="onSubmit()">Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div id="logo" class="overlay-panel overlay-right"></div>
+    </div>
+  </div>
+</div>
+
+<div style="height: -webkit-fill-available" class="wrapper">
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
